@@ -31,10 +31,13 @@ export class Tab1Page {
     const currentX = detail.currentX;
     const deltaX = detail.deltaX;
     const velocityX = detail.velocityX;
-    console.log(type);
-    console.log(currentX);
-    console.log(deltaX);
-    console.log(velocityX);
+  
+    if(velocityX > 0){
+      console.log("Swiped Right")
+    }
+    else if(velocityX < 0){
+      console.log("Swiped Left")
+    }
   }
  
 }
