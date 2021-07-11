@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      cake
+      Dipper
 
     </ion-title>
   </ion-toolbar>
@@ -13,5 +13,12 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-<div id="swipeContainer" #swipeContainer>ty</div>
+  
+<div class="swipeContainer" #swipeContainer
+ >
+  <div *ngIf= "currentChoice" >
+    <h1>{{ currentChoice.name }}</h1>
+    <h2>{{currentChoice.age}}</h2>
+  </div>
+</div>
 </ion-content>
