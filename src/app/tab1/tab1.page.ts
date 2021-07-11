@@ -75,12 +75,15 @@ export class Tab1Page {
     }
     //left
     else if(velocityX < -1.4 && this.readSwipe){
-      
-      this.usersIndex = this.usersIndex + 1;
+      this.users.shift()
+      // this.usersIndex = this.usersIndex + 1;
       this.currentChoice = this.users[this.usersIndex]
       console.log(this.currentChoice)
       this.readSwipe = false;
       console.log("Swiped Left")
+      console.log(this.users)
+      // this.users.pop()
+      // this.currentChoice.pop
       
     }
   }
