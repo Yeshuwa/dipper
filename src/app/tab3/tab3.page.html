@@ -11,7 +11,7 @@
     
     <ion-item>
       <ion-avatar slot="start"><img src="{{person.picture}}"></ion-avatar>
-    <ion-label (click)="iGotClicked()">
+    <ion-label [routerLink]="['/single-user-chats']" (click)="iGotClicked()">
       <h1>{{ person.name }}</h1>
       <p>{{person.lastChat}}</p>
     </ion-label>

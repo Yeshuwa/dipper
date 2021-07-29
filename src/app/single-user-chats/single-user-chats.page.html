@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>single-user-chats</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Chat</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  
+  <div class="divStyle" *ngFor="let textBubble of messages">
+  
+    {{textBubble}}
+  
+  </div>
+<input type="text" class="chatStyle" id="messageSent">
+<button id="Send" (click)="sendMessage()">Send</button>
 </ion-content>

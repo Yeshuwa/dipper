@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-user-chats.page.scss'],
 })
 export class SingleUserChatsPage implements OnInit {
+  public messages = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    
   }
+  
 
+  sendMessage() {
+    
+  
+   let message = (<HTMLInputElement>document.getElementById("messageSent")).value;
+   console.log(message);
+  this.messages.push(message);
+  
+   (<HTMLInputElement>document.getElementById("messageSent")).value = "";
+  }
 }

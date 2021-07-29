@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'single-user-chats',
     loadChildren: () => import('./single-user-chats/single-user-chats.module').then( m => m.SingleUserChatsPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 
   // {
   //   path: 'chat',
