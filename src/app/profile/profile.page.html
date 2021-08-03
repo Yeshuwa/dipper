@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<img class="profileimg" src="../../assets/dude.jpg">
+<div class="name">Devin Wiseman, 19</div>
+<div class="education">University Student</div>
+<ion-segment [(ngModel)]="selectTabs">
+  <ion-segment-button value="description">
+    <ion-label>Description</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="images">
+    <ion-label>Images</ion-label>
+  </ion-segment-button>
+</ion-segment>
+<div class="description" *ngIf="selectTabs == 'description'">
+  <div class="label">- I like animals and playing video games <br> - I live in Los Angeles</div>
+  <div class="title">Interests</div>
+  <div class="interests">
+    <div class="interest red">Traveling</div>
+    <div class="interest green">Gaming</div>
+    <div class="interest blue">Fitness</div>
+    <div class="interest yellow">Reading</div>
+    <div class="interest purple">Photography</div>
+    <div class="interest orange">Music</div>
+  </div>
+</div>
+
+<div class="images" *ngIf="selectTabs == 'images'">
+  <div class="title">Photos</div>
+  <div class="gallery">
+  <img class="picture" src="../../assets/dog.jpg">
+  <img class="picture" src="../../assets/switch.jpg">
+  <img class="picture" src="../../assets/plane.jpg">
+</div>
+</div>
+</ion-content>

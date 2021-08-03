@@ -1,0 +1,57 @@
+.profileimg {
+    height: 200px;
+    width: 200px;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.interest {
+    display: inline-block;
+    padding: 5px;
+    border: solid 1px transparent;
+    border-radius: 20px;
+
+}
+
+.red {
+    color: red;
+    background-color: rgba(255,0,0,.3);
+}
+.green {
+    color: green;
+    background-color: rgba(0,255,0,.3);
+}
+.orange {
+    color: orange;
+    background-color: rgba(orange,.3);
+}
+.yellow {
+    color: turquoise;
+    background-color: rgba(turquoise,.3);
+}
+.purple {
+    color: purple;
+    background-color: rgba(128,0,128,.3);
+}
+.blue {
+    color: blue;
+    background-color: rgba(0,0,255,.3);
+}
+
+.picture {
+    height: 200px;
+    width: 30%;
+    border: solid 1px transparent;
+    border-radius: 30px;
+    text-align: center;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.gallery {
+    text-align: center;
+    
+}

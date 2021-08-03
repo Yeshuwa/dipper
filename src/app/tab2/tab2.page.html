@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    
     <ion-title>
-      Tab 2
+      Messages
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,8 +10,19 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large"></ion-title>
+      <ion-button [routerLink]="['/profile']" >profile</ion-button>
     </ion-toolbar>
+    <ion-card>
+      <img src="../../assets/gorl2.jpg">
+      <ion-card-header>
+        <ion-card-title>Sofía</ion-card-title>
+        <ion-card-subtitle>19</ion-card-subtitle>
+        <ion-card-subtitle>96%</ion-card-subtitle>
+        
+      </ion-card-header>
+      
+    </ion-card>
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
